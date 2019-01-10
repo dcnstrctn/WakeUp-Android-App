@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="259dp"
+        android:text=""
+        android:hint="Add DDL content here"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/OkButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_toStartOf="@+id/switch1"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginStart="89dp"
+        android:text="Finished"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_toStartOf="@+id/switch1"
+        android:text="Update" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+
+        android:layout_marginBottom="-259dp"
+        android:hint="Click here to set DATE"
+        android:ems="10"
+        android:inputType="none" /><!--不显示系统输入键盘-->
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_toRightOf="@id/editText3"
+        android:layout_marginBottom="-259dp"
+        android:hint="set TIME"
+        android:ems="10"
+        android:inputType="none" /><!--不显示系统输入键盘-->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/MyRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:rating="3.0"
+        android:stepSize="1.0"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="19dp"
+        android:text="编辑"
+        android:checked="true"/>
+
+</RelativeLayout>

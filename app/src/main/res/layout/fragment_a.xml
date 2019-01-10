@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout1">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_above="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/p2" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天了噜！你居然没有DEADLINE惹"
+        android:textColorHighlight="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="30px"/>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:minHeight="100dp"
+        android:divider="#000000"
+        android:dividerHeight="1px"
+        android:layout_margin="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/editText"/>
+
+</RelativeLayout>
